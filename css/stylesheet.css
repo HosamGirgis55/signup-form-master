@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    color: white;
+}
+
+
+.contener{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../image/bg-intro-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%) ;
+    padding: 8%;
+}
+
+.description h2{
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.description p{
+    font-weight: 400;
+}
+.signIN span {
+    opacity: 50%;
+}
+.signIN h3{
+    background-color: hsl(248, 32%, 49%);
+    padding: 5%;
+    margin: 5% 0;
+    width: 100%;
+    font-size: 1em;
+    border-radius: 8px;
+    text-align: center;
+}
+.signIN form{
+    width: 100%;
+    padding: 3%;
+    background-color: white;
+    border-radius: 8px;
+    text-align: end;
+}
+.signIN form input[type="password"] , .signIN form input[type="text"]{
+    width: 94%;
+    border-radius: 5px;
+    margin: 3%;
+    padding: 2%;
+    border-color: rgba(128, 128, 128, 0.416);
+    color: rgb(128, 128, 128);
+    border: 2px solid rgb(128, 128, 128);
+}
+.signIN form div{
+    position: relative;
+}
+.signIN form img{
+    position: absolute;
+    visibility: hidden;
+    top: 27px;
+    right: 25px;  
+}
+.signIN form input[type="submit"]{
+    width: 94%;
+    border-radius: 5px;
+    margin: 3%;
+    padding: 1%;
+    background-color: hsl(154, 59%, 51%);
+    border: 0;
+    padding: 2%;
+}
+.signIN form input[type="submit"]:hover{
+    background-color: hsla(154, 86%, 45%, 0.723);
+}
+#form span{
+    visibility: hidden;
+    display: block;
+    margin: 0 20px;
+}
+@media screen  and (max-width : 600px){
+
+    .description h2
+    {
+        font-size: 2.5em;
+    }
+.signIN form img{
+    top: 15px;
+    right: 15px;
+}
+
+}
